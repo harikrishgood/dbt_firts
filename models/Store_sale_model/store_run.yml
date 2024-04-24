@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: test_db
+    database: dbt_db
+    schema: prod
+    tables:
+      - name: Store_2024
+      - name: Store_Sales_2024

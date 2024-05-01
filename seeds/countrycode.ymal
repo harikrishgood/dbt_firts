@@ -1,0 +1,11 @@
+seeds:
+    - name: countrydailcode
+    config:
+        column_type:
+            country: varchar2(30)
+            country_code: number
+            dailcode:
+                countrycode2:
+                    column_types:
+                    country:varchar2(30)
+                    country_code: number

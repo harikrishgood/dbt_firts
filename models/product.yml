@@ -1,0 +1,11 @@
+version: 2
+
+models: 
+  - name: STG_product
+    description: "This is product information"
+    columns:
+      - name: REGION
+        description: "The primary key for this table"
+        tests:
+            - dbt_utils.not_accepted_values:
+                values: ['NORTH','EAST']
